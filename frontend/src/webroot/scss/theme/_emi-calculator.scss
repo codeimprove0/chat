@@ -1,0 +1,611 @@
+.box {
+    background: #fff;
+    margin-top: 20px;
+}
+
+.emicontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainheadingcard {
+    padding: 30px 16px 16px 16px;
+}
+
+.mainheading {
+    position: relative;
+    z-index: 10;
+}
+
+.mainpara {
+    position: relative;
+    z-index: 10;
+}
+
+.headingpc {
+    display: none;
+}
+
+.emicard {
+    background-image: url('../../../webroot/images/emibgimg.svg');
+    padding: 30px 16px 16px 16px;
+}
+
+.emicardnew {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newemibox {
+    padding: 16px;
+    border-bottom: 2px solid#DFE3F4;
+}
+
+.emiborder {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start !important;
+    position: relative;
+    width: 45%;
+}
+
+.emiborder:last-child {
+    border-right: none;
+}
+
+.emiline {
+    width: 1px;
+    height: 50px;
+    background: lightgray;
+}
+
+.emibox {
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.emiamount {
+    background: white;
+    padding: 16px 10px;
+    border-radius: 20px;
+}
+
+.emispan {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #342F59;
+    opacity: 0.7;
+}
+
+.emispannew {
+    font-size: 12px;
+    color: #342F59;
+    opacity: 0.7;
+}
+
+.emiprice {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.amountcard {
+    padding: 16px;
+}
+
+.mainamount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+
+    input {
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+    }
+}
+
+.maintenure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+
+    input {
+        width: 50px;
+        text-align: center;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+    }
+}
+
+.mainrate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+
+    input {
+        width: 60px;
+        text-align: center;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+    }
+}
+
+.price {
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.emicommon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.range {
+    input {
+        width: 100%;
+        color: #9C8CF9;
+    }
+}
+
+.containerstyle {
+    position: relative;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    // margin: auto;
+}
+
+.applynowbtn {
+    border: 1px solid #fff;
+    background: none;
+    height: 30px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: 20px 0px;
+    padding: 0px 20px;
+}
+
+.loancard {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textstyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.pricecount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.para {
+    font-size: 16px;
+    color: #fff;
+}
+
+.totalamount {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.flotright {
+    width: 50%;
+    position: relative;
+}
+
+.loanheading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.loandetailscard {
+    padding: 16px 16px 40px 16px;
+}
+
+.loandetailsbox {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.pchidebtn {
+    display: initial;
+}
+
+.applynowbtnpc {
+    display: initial;
+    background: #6147FF;
+    color: #fff;
+    border-radius: 30px;
+    font-family: poppins;
+    height: 48px;
+    width: 150px;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+@media(max-width:320px) {
+    .containerstyle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .amountcard {
+        padding: 16px 0px 0px 0px;
+    }
+
+    .emispan {
+        font-size: 10px;
+    }
+
+    .emiprice {
+        font-size: 14px;
+    }
+
+    .pricecount {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .totalamount {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .box {
+        padding: 60px 150px;
+        background-image: none;
+    }
+
+    .emicontainer {
+        width: 1280px;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .box {
+        padding: 50px 150px;
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pchidebtn {
+        display: none;
+    }
+
+    .pccrad {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    }
+
+    .emiborder {
+        width: 30%;
+    }
+
+    .flotleft {
+        width: 50%;
+    }
+
+    .emicard {
+        width: 45%;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .containerstyle {
+        width: 220px;
+        height: 220px;
+        // margin: auto;
+    }
+
+    .mainheading {
+        font-size: 28px;
+    }
+
+    .newemibox {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 10px;
+        background: #fff;
+    }
+
+    .emibox {
+        position: relative;
+        padding: 0px;
+    }
+
+    .emispannew {
+        font-size: 16px;
+    }
+
+    .emiprice {
+        font-size: 24px;
+    }
+
+    .loancard {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .mainamount {
+        font-size: 16px;
+
+        input {
+            font-size: 14px;
+        }
+    }
+
+    .maintenure {
+        font-size: 16px;
+
+        input {
+            font-size: 14px;
+        }
+    }
+
+    .mainrate {
+        font-size: 16px;
+
+        input {
+            font-size: 14px;
+        }
+    }
+
+    .applynowbtn {
+        background: #fff;
+        color: #000;
+        height: 42px;
+        width: 130px;
+        font-size: 14px;
+    }
+
+    .emispan {
+        font-size: 14px;
+    }
+
+    .loanheading {
+        font-size: 28px;
+    }
+
+    .emicommon {
+        font-size: 14px;
+    }
+
+    .loandetailscard {
+        padding: 100px 0px 0px 0px;
+    }
+
+}
+
+.box {
+    input[type=range].styled-slider {
+        height: 0px;
+        -webkit-appearance: none;
+        outline: none;
+      }
+      
+      /*progress support*/
+      input[type=range].styled-slider.slider-progress {
+        --range: calc(var(--max) - var(--min));
+        --ratio: calc((var(--value) - var(--min)) / var(--range));
+        --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+      }
+      
+      input[type=range].styled-slider:focus {
+        outline: none;
+      }
+      
+      /*webkit*/
+      input[type=range].styled-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 2em;
+        height: 2em;
+        border-radius: 1em;
+        background: #fff;
+        border: 3px solid #9C8CF9;
+        margin-top: calc(max((1em - 1px - 1px) * 0.5, 0px) - 2em * 0.5);
+      }
+      
+      input[type=range].styled-slider::-webkit-slider-runnable-track {
+        height: 10px;
+        border: none;
+        border-radius: 0.5em;
+        background: #252525;
+        box-shadow: none;
+      }
+      
+      input[type=range].styled-slider::-webkit-slider-thumb:hover {
+        background: #fff;
+      }
+      
+      input[type=range].styled-slider:hover::-webkit-slider-runnable-track {
+        background: #fff;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider::-webkit-slider-thumb:active {
+        background: #fff;
+      }
+      
+      input[type=range].styled-slider:active::-webkit-slider-runnable-track {
+        background: #fff;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+        background: linear-gradient(#9C8CF9, #9C8CF9) 0/var(--sx) 100% no-repeat, #c5c4c4;
+      }
+      
+      input[type=range].styled-slider.slider-progress:hover::-webkit-slider-runnable-track {
+        background: linear-gradient(#9C8CF9, #9C8CF9) 0/var(--sx) 100% no-repeat, #c5c4c4;
+      }
+      
+      input[type=range].styled-slider.slider-progress:active::-webkit-slider-runnable-track {
+        background: linear-gradient(#9C8CF9, #9C8CF9) 0/var(--sx) 100% no-repeat, #c5c4c4;
+      }
+      
+      /*mozilla*/
+      input[type=range].styled-slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        border: 3px solid #9C8CF9;
+      }
+      
+      input[type=range].styled-slider::-moz-range-track {
+        height: 10px;
+        border: none;
+        border-radius: 0.5em;
+        background: #D9D9D9;
+        box-shadow: none;
+      }
+      
+      input[type=range].styled-slider::-moz-range-thumb:hover {
+        background: #fff;
+      }
+      
+      input[type=range].styled-slider:hover::-moz-range-track {
+        background: #fff;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider::-moz-range-thumb:active {
+        background: #fff;
+      }
+      
+      input[type=range].styled-slider:active::-moz-range-track {
+        background: #f5f5f5;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider.slider-progress::-moz-range-track {
+        background: linear-gradient(#9C8CF9, #9C8CF9) 0/var(--sx) 100% no-repeat, #c5c4c4;
+      }
+      
+      input[type=range].styled-slider.slider-progress:hover::-moz-range-track {
+        background: linear-gradient(#9C8CF9, #9C8CF9) 0/var(--sx) 100% no-repeat, #c5c4c4;
+      }
+      
+      input[type=range].styled-slider.slider-progress:active::-moz-range-track {
+        background: linear-gradient(#9C8CF9, #9C8CF9) 0/var(--sx) 100% no-repeat, #c5c4c4;
+      }
+      
+      /*ms*/
+      input[type=range].styled-slider::-ms-fill-upper {
+        background: transparent;
+        border-color: transparent;
+      }
+      
+      input[type=range].styled-slider::-ms-fill-lower {
+        background: transparent;
+        border-color: transparent;
+      }
+      
+      input[type=range].styled-slider::-ms-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #9C8CF9;
+        border: 3px solid #9C8CF9;
+        box-shadow: 0 0 2px black;
+        margin-top: 0;
+        box-sizing: border-box;
+      }
+      
+      input[type=range].styled-slider::-ms-track {
+        height: 10px;
+        border-radius: 1em;
+        background: #D9D9D9;
+        border: 1px solid #9C8CF9;
+        box-shadow: none;
+        box-sizing: border-box;
+      }
+      
+      input[type=range].styled-slider::-ms-thumb:hover {
+        background: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider:hover::-ms-track {
+        background: #e5e5e5;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider::-ms-thumb:active {
+        background: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider:active::-ms-track {
+        background: #f5f5f5;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+        height: max(calc(1em - 1px - 1px), 0px);
+        border-radius: 0.5em 0 0 0.5em;
+        margin: -1px 0 -1px -1px;
+        background: #9C8CF9;
+        border: 1px solid #9C8CF9;
+        border-right-width: 0;
+      }
+      
+      input[type=range].styled-slider.slider-progress:hover::-ms-fill-lower {
+        background: #9C8CF9;
+        border-color: #9C8CF9;
+      }
+      
+      input[type=range].styled-slider.slider-progress:active::-ms-fill-lower {
+        background: #9C8CF9;
+        border-color: #9C8CF9;
+      }
+
+}

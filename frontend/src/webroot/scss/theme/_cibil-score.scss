@@ -1,0 +1,62 @@
+.styles_scoreValue__2dBgK{
+    display: none !important;
+}
+.styles_wrapper__3KXDn{
+    height: 220px !important;
+}
+.cibilscorebox{
+    position: relative;
+}
+.cibilscore{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.cibilscoreheading{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.cibilupdated{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    span{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+.cibilhighscore{
+    background: #e8f5fc;
+    padding:12px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.cibilicon{
+    display: flex;
+    align-items: center;
+}
+.cibilhistory{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cibilstatus{
+    color:#000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cibilsubstatus{
+    font-size: 12px;
+}
+.cibilcolorper{
+    color: #6147FF;
+    font-weight: 600;
+    text-align: end;
+}

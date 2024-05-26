@@ -1,0 +1,298 @@
+.fe-status-form {
+    .from-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .custom-checkbox {
+        .custom-control-input {
+            height: 18px;
+            width: 18px;
+        }
+        .custom-control-label {
+            &:before {
+                height: 14px;
+                width: 14px;
+            }
+            &::after {
+                height: 18px;
+                width: 18px;
+                top: 0;
+                left: -1px;
+            }
+        }
+    }
+    .material {
+        input {
+            height: 48px;
+        }
+        .form-label:before {
+            top: 14px;
+        }
+    }
+    textarea {
+        resize: none;
+    }
+    // .fe-scroll-sec {
+    //     // max-height: 615px;
+    //     // overflow-y: auto;
+    //     // overflow-x: hidden;
+    //     // width: calc(100% + 50px);
+    //     // margin-left: -30px;
+    //     // padding: 0px 15px 0 30px;
+    // }
+}
+
+.call-attempt-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    label {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: $heading-color;
+    }
+    .react-numeric-input {
+        width: 126px;
+        b {
+            background: transparent !important;
+            height: 32px !important;
+            width: 32px !important;
+            border: 1px solid #bbbbbb !important;
+            border-radius: 8px !important;
+            margin-top: -10px;
+            i {
+                background: rgba(0, 0, 0, 0.4) !important;
+            }
+        }
+    }
+    .numaric-input {
+        width: 100% !important;
+        border: 0px !important;
+    }
+}
+
+.hidden {
+    display: none;
+}
+.image-tagning-drop-down {
+    &.mark-tag-txt {
+        right: 74px;
+        margin-top: -54px;
+        .select-category {
+            width: 100%;
+            padding: 5px;
+        }
+        button {
+            border: 0px;
+            width: auto;
+            height: auto;
+            font-size: 14px;
+            padding: 0px;
+        }
+        .dropdown-toggle {
+            &:after {
+                font-size: 20px;
+                right: -33px;
+                line-height: normal;
+                margin-left: 0px;
+                margin-top: 1px;
+            }
+        }
+        .dropdown-menu {
+            transform: translate(0px, 25px) !important;
+        }
+    }
+}
+
+.btn-download {
+    height: 38px;
+    padding: 0px 15px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+.lead-form-heading {
+    &.d-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        h2 {
+            padding-bottom: 0px;
+        }
+    }
+}
+.fap-detail-form {
+    .tab-line {
+        margin-bottom: 30px;
+    }
+}
+
+.file-upload-bx {
+    max-height: 836px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: calc(100% + 50px);
+    margin-left: -30px;
+    padding: 0px 15px 0 30px;
+}
+.fill-pdf-form {
+    &.lead-form-filed {
+        h3 {
+            padding: 5px 0px 20px;
+        }
+    }
+}
+.upload-hard-copy {
+    h3 {
+        padding-top: 0px;
+    }
+}
+
+.copyUpload {
+    width: 100%;
+    text-align: center;
+    background: #eff2f9;
+    border-radius: 8px;
+    .display-box {
+        background: #eff2f9;
+    }
+    .image-uploader-wrapper {
+        padding-top: 0px;
+        .display-box {
+            min-height: auto;
+            padding: 25px 0;
+        }
+    }
+    .upload-icon {
+        background: $white;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.upload-hard-copy-view {
+    .upload-bg {
+        background: #eff2f9;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+        .ic-clearclose {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(31, 31, 31, 0.6);
+            height: 16px;
+            width: 16px;
+            border-radius: 16px;
+            color: #fff;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+    .reuplaod {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: $heading-color;
+        text-decoration: underline;
+        padding-top: 10px;
+        display: block;
+    }
+}
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.soft-approvel-sec {
+    .from-group {
+        display: flex;
+        text-align: center;
+        .custom-control {
+            margin-right: 50px;
+            .custom-control-label::before {
+                top: 0.3px;
+            }
+        }
+    }
+}
+.lead-form-filed {
+    .form-filed {
+        input {
+            height: 40px;
+        }
+    }
+}
+
+.datepick-heading {
+    &:before {
+        top: -9px !important;
+        font-size: 12px;
+        background: #ffffff;
+    }
+}
+
+.atm-list-link {
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: $heading-color;
+    display: block;
+    cursor: pointer;
+    padding-left: 11px;
+    padding-bottom: 20px;
+}
+
+.fe-comment-popup {
+    .heading {
+        font-weight: 500 !important;
+        font-size: 14px !important;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 5px 0 !important;
+    }
+    .date-time {
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        color: rgba($heading-color, 0.6);
+    }
+    table {
+        tbody {
+            tr {
+                td {
+                    &:nth-child(2) {
+                        width: calc(100% - 80px) !important;
+                        border-radius: 8px !important;
+                    }
+                }
+            }
+        }
+    }
+}

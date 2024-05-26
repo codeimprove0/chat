@@ -1,0 +1,118 @@
+.notification-btn {
+  .dropdown {
+    button {
+      font-size: 32px;
+      border: 0px;
+      background: transparent;
+      cursor: pointer;
+      color: $white;
+      display: flex;
+      align-items: center;
+    }
+
+    &.show {
+      .dropdown-menu {
+        display: block;
+      }
+      // &:after {
+      //   content: "\e91a";
+      // }
+    }
+  }
+  .dropdown-menu {
+    background: $white;
+    box-shadow: 0px 2px 14px rgba(31, 45, 78, 0.14);
+    border-radius: 6px;
+    position: absolute;
+    width: 390px;
+    left: -100px;
+    top: 40px;
+    z-index: 1;
+    max-height: 475px;
+    overflow-y: auto;
+  }
+
+  .makecalldropdwon {
+    ul {
+      padding: 10px 0px;
+      li {
+        padding: 0px 35px;
+        a {
+          display: block;
+          border-bottom: 1px solid rgba($heading-color, 0.1);
+          padding: 16px 0;
+          color: rgba($heading-color, 0.7);
+          &.read-msg {
+            opacity: 0.5;
+          }
+        }
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          h3 {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            color: $heading-color;
+          }
+          .time-date {
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 20px;
+            color: rgba($heading-color, 0.5);
+          }
+        }
+        .notification-msg {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 18px;
+          color: rgba($heading-color, 0.7);
+        }
+        .notication-data {
+          overflow: hidden;
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: rgba($heading-color, 0.7);
+          span {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba($heading-color, 0.7);
+          }
+        }
+        &:last-child {
+          a {
+            border-bottom: 0px;
+          }
+        }
+        &:hover {
+          background: rgba(239, 242, 249, 0.6);
+          a {
+            border-bottom: 1px solid transparent;
+          }
+          .heading {
+            h3 {
+              &:before {
+                content: "";
+                background: #34c48b;
+                height: 7px;
+                width: 7px;
+                border-radius: 100%;
+                position: absolute;
+                top: 6px;
+                left: -18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  display: none;
+}

@@ -1,0 +1,268 @@
+.financer-lead-heding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn-line {
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ic-add {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.financer-table-list {
+    background: $white;
+    border-radius: 8px;
+    .ToggleSwitch {
+        &.ToggleSwitch__rounded {
+            .Slider {
+                border-color: #dbdfea;
+                &::before {
+                    margin-top: 1px;
+                }
+            }
+        }
+        .ToggleSwitch__wrapper {
+            .Slider {
+                .isChecked {
+                    &:before {
+                        left: calc(100% - 0.2rem - 1rem);
+                    }
+                }
+            }
+        }
+    }
+    .form-input {
+        background: $white;
+        border: 1px solid #bbbbbb;
+        border-radius: 6px;
+        padding: 5px 10px;
+        width: 100%;
+        max-width: 60px;
+    }
+    table {
+        border-radius: 8px;
+        th,
+        td {
+            &:nth-child(1) {
+                width: 20%;
+            }
+            &:nth-child(2) {
+                width: 20%;
+            }
+            &:nth-child(3) {
+                width: 17%;
+            }
+            &:nth-child(4) {
+                width: 17%;
+            }
+            &:nth-child(5) {
+                width: 13%;
+            }
+            &:nth-child(6) {
+                width: 13%;
+            }
+        }
+    }
+    .branch-count {
+        background: #ffffff;
+        border: 1px solid #bbbbbb;
+        box-sizing: border-box;
+        border-radius: 6px;
+        max-width: 60px;
+        width: 100%;
+        display: block;
+        padding: 0px 12px;
+        line-height: 10px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.Add-Financer-popup {
+    .modal-main {
+        border-radius: 8px;
+        width: 560px;
+        padding: 40px 40px;
+        h2 {
+            padding: 0px 0 19px 0px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .modal-body {
+            padding-top: 5px;
+        }
+    }
+    .img-bx-select-opt {
+        position: relative;
+        margin: 0px 0px;
+        .image-bx {
+            height: 140px;
+            margin-bottom: 0px;
+        }
+        &:hover {
+            .close-icn {
+                opacity: 1;
+            }
+        }
+        .custom-control-label {
+            display: flex;
+        }
+    }
+    .more-file-upload {
+        flex-direction: column;
+
+        p {
+            display: block;
+            text-decoration: underline;
+            font-size: 14px;
+            line-height: 30px;
+            color: $heading-color;
+            text-align: center;
+        }
+        input[type="file"] {
+            opacity: 0;
+            height: 140px;
+            width: 100%;
+            outline: 0;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+        }
+    }
+    .subheading {
+        display: block;
+        padding: 30px 0px 16px 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba($heading-color, 0.87);
+        width: 100%;
+    }
+    .radio-type-txt {
+        flex-wrap: wrap;
+    }
+    .btn-primary {
+        min-width: 230px;
+        margin-top: 20px;
+    }
+    fieldset {
+        width: 100%;
+    }
+}
+
+.financer-branch-popup {
+    .modal-main {
+        width: 560px;
+        padding-top: 60px;
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            h2 {
+                padding-bottom: 0px;
+            }
+        }
+        .modal-body {
+            overflow: hidden;
+        }
+    }
+    .btn-line {
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        .ic-add {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+    }
+    .branch-list-table {
+        .branch-count-txt {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba($heading-color, 0.6);
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        thead {
+            tr {
+                display: block;
+            }
+        }
+        tbody {
+            display: block;
+            width: calc(100% + 25px);
+            overflow: auto;
+            max-height: 350px;
+            padding-right: 25px;
+            tr {
+                width: 100%;
+                display: block;
+            }
+        }
+        th,
+        td {
+            &:nth-child(1) {
+                width: 350px;
+            }
+            &:nth-child(2) {
+                width: 120px;
+            }
+        }
+    }
+    .ToggleSwitch {
+        &.ToggleSwitch__rounded {
+            .Slider {
+                border-color: #dbdfea;
+                &::before {
+                    margin-top: 1px;
+                }
+            }
+        }
+        .ToggleSwitch__wrapper {
+            .Slider {
+                .isChecked {
+                    &:before {
+                        left: calc(100% - 0.2rem - 1rem);
+                    }
+                }
+            }
+        }
+    }
+}
+.add-financer-branch {
+    .back-icn {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 25px;
+        cursor: pointer;
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            color: $heading-color;
+        }
+        .ic-arrow_back {
+            font-size: 18px;
+            color: $heading-color;
+            margin-right: 5px;
+        }
+    }
+    .modal-main {
+        .close_icn {
+            display: none;
+        }
+    }
+}

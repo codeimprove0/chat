@@ -1,0 +1,176 @@
+.button {
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 12px;
+  @include border-radius(30px);
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-gps {
+  background: $accent-color;
+  color: #fff;
+  @include border-radius(12.5px);
+  padding: 6px 10px;
+  font-size: 13px;
+
+  i {
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+
+.btn-line {
+  @extend .button;
+  // border: 1px solid $promotional-color;
+  border: 1px solid $btncolor;
+  color: $white;
+  min-width: 105px;
+  background: $accent-color;
+  &:hover {
+    background: $btncolor;
+    color: $white;
+    border-color: $btncolor;
+  }
+}
+
+.btn-solid {
+  @extend .button;
+  background: $promotional-color;
+  border: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.btn-edit-delete {
+  font-size: 12px;
+  color: $heading-color;
+  height: 29px;
+  line-height: 28px;
+  padding: 0px 20px;
+  border: 1px solid#dbdbdb;
+  background: $white;
+  color: $heading-color;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: $accent-color;
+  box-shadow: $accent-color;
+  border-radius: 30px;
+  height: 42px;
+  line-height: 41px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $white;
+  cursor: pointer;
+  min-width: 200px;
+  border: 1px solid $accent-color;
+}
+
+.btn-fill {
+  min-width: auto;
+  padding: 0px 10px;
+  height: 34px;
+  line-height: 31px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #808080;
+  color: $white;
+  background: #808080;
+  border-radius: 6px;
+  cursor: pointer;
+  .ic-check {
+    margin-right: 5px;
+  }
+}
+
+.btn-approve {
+  background: #3bc04d;
+  color: $white;
+  min-width: 138px !important;
+  border-color: #3bc04d;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ic-check {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  background: #919191;
+  border-color: #919191;
+  box-shadow: none;
+}
+.checklist-outer{
+  padding: 0px 20px 10px 0px ;
+  margin-top: -20px;
+
+}
+.checklist-save{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: end;
+}
+.success-new{
+  background: #4CA110FF;
+  border: none;
+  box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+  height: 22px;
+  color: #fff;
+  font-family: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: end;
+  text-align: end;
+  border-radius: 4px;
+}
+
+.btn-success {
+  background: #4CA110FF;
+  box-shadow: #4CA110FF;
+  border-radius: 30px;
+  height: 42px;
+  line-height: 41px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $white;
+  cursor: pointer;
+  min-width: 200px;
+  border: 1px solid #4CA110FF;
+}
+.add-schemebtn {
+  background: rgb(87, 182, 141);
+  box-shadow: rgb(87, 182, 141);
+  border-radius: 10px;
+  height: 42px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $white;
+  cursor: pointer;
+  border: 1px solid rgb(87, 182, 141);
+}
+.add-schemebtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}

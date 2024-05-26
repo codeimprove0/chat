@@ -1,0 +1,517 @@
+.send-financer {
+    .from-group {
+        // display: flex;
+        align-items: center;
+        .select-mode-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+            &:first-child {
+                border-bottom: 1px solid rgba($heading-color, 0.1);
+                padding-bottom: 14px;
+                margin-bottom: 14px;
+            }
+        }
+    }
+    // .custom-control {
+    //     // margin-right: 100px;
+    // }
+    h3 {
+        padding-top: 10px;
+    }
+    .financer-doc-list {
+        max-height: 680px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: calc(100% + 50px);
+        margin-left: -30px;
+        padding: 0px 15px 0 30px;
+        .accordion__button {
+            background: transparent;
+            width: 100%;
+            border: 0px;
+            text-align: left;
+            position: relative;
+            &:after {
+                content: "\e907";
+                font-family: dc !important;
+                position: absolute;
+                right: 0;
+                font-size: 20px;
+                bottom: 1px;
+            }
+        }
+        .accordion__button[aria-expanded="true"]::after,
+        .accordion__button[aria-selected="true"]::after {
+            content: "\e90c";
+            font-family: dc !important;
+        }
+        .accordion__item {
+            padding: 15px 0;
+            position: relative;
+            h2 {
+                padding-bottom: 0px;
+                line-height: 15px;
+            }
+
+            &:after {
+                content: "";
+                width: calc(100% - 34px);
+                height: 1px;
+                background: rgba($heading-color, 0.1);
+                position: absolute;
+                bottom: 0;
+                left: 34px;
+            }
+            .btn-download {
+                background: #ffffff;
+                border: 1px solid #8c8c8c;
+                box-sizing: border-box;
+                border-radius: 6px;
+                height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                padding: 0px 14px;
+                color: $heading-color;
+            }
+            .sub-list {
+                ul {
+                    width: 100%;
+                    padding-left: 30px;
+                    padding-top: 3px;
+                    li {
+                        display: flex;
+                        padding: 15px 0 0;
+                        align-items: center;
+                        justify-content: space-between;
+                        &:after {
+                            display: none;
+                        }
+                        .custom-control-label {
+                            color: rgba($heading-color, 0.7);
+                            font-size: 13px;
+                            &:before {
+                                width: 13px;
+                                height: 13px;
+                            }
+                            &:after {
+                                top: 0;
+                                width: 17px;
+                                height: 17px;
+                            }
+                        }
+                        .custom-control-input {
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+            &:first-child {
+                padding-top: 0px;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.date-filed {
+    .datepicker {
+        input {
+            height: 48px;
+        }
+    }
+}
+
+.scroll-sec {
+    max-height: 870px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: calc(100% + 50px);
+    margin-left: -30px;
+    padding: 0px 15px 0 30px;
+}
+
+.btn-save-remarks {
+    padding-top: 10px;
+    .btn-primary-outline {
+        // background: $accent-color;
+        background: #fff;
+        box-shadow: $accent-color;
+        border-radius: 30px;
+        height: 42px;
+        line-height: 41px;
+        font-weight: 500;
+        font-size: 14px;
+        color: $accent-color;
+        cursor: pointer;
+        min-width: 160px;
+        border: 1px solid $accent-color;
+        margin-right: 6px;
+      }
+    .create-req-btn {
+        min-width: auto;
+        padding: 0px 10px;
+    }
+}
+
+.label-txt {
+    width: 100%;
+    &:before {
+        width: 86%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.upload-photo-btn {
+    background: #ffffff;
+    border: 1px solid #8c8c8c;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0px 14px;
+    color: #000;
+
+    input {
+        opacity: 0;
+        height: 28px;
+        width: 100%;
+        outline: 0;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+    }
+}
+
+.upload-img {
+    label {
+        color: $heading-color;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.survey-process-bx {
+    max-height: 874px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: calc(100% + 50px);
+    margin-left: -30px;
+    padding: 7px 20px 0 30px;
+    min-height: 600px;
+}
+.po-doc-attech-list {
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 8px 0;
+            &:after {
+                content: "";
+                width: calc(100% - 34px);
+                height: 1px;
+                background: rgba(0, 0, 0, 0.1);
+                position: absolute;
+                bottom: 0;
+                left: 34px;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+            &:first-child {
+                padding-top: 0px;
+            }
+        }
+    }
+    .btn-view {
+        background: #ffffff;
+        border: 1px solid #8c8c8c;
+        box-sizing: border-box;
+        border-radius: 6px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0px 14px;
+        color: $heading-color;
+    }
+}
+.radio-type-txt {
+    .label-heading {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.lead-car-detail {
+    .switch-toggle {
+        width: 100%;
+    }
+    .radio-type-txt {
+        padding-bottom: 20px;
+        margin-top: 5px;
+    }
+}
+
+.m-t-25 {
+    margin-top: 25px;
+}
+
+.send-financer-heading {
+    .subheading {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: $heading-color;
+        padding-bottom: 13px;
+        display: block;
+    }
+}
+
+.select-list-doc {
+    .date-time-txt {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba($heading-color, 0.6);
+    }
+
+    a {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration: underline;
+        color: $heading-color;
+        cursor: pointer;
+        margin-left: 10px;
+        &.report-txt {
+            margin-left: 28px;
+        }
+    }
+}
+
+.financer-email-popup {
+    .modal-header {
+        h2 {
+            padding-bottom: 0px !important;
+        }
+        .sub-heading {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba($heading-color, 0.6);
+            display: block;
+            padding-bottom: 24px;
+        }
+    }
+    .financer-email-data {
+        background: #eff2f9;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 10px;
+        p {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: $heading-color;
+            padding-bottom: 25px;
+        }
+    }
+    .email-attech-doc-list {
+        h3 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: $heading-color;
+            padding-top: 25px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            width: 100%;
+            flex-wrap: wrap;
+            li {
+                background: #ffffff;
+                border: 1px solid #dde1e9;
+                border-radius: 16px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+                font-size: 12px;
+                color: $heading-color;
+                padding: 0px 17px;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .accordion__button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: $heading-color;
+        position: relative;
+        &:after {
+            content: "\e907";
+            font-family: dc !important;
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+            bottom: 1px;
+        }
+    }
+    .accordion__button[aria-expanded="true"]::after,
+    .accordion__button[aria-selected="true"]::after {
+        content: "\e90c";
+        font-family: dc !important;
+    }
+
+    .accordion__item {
+        border-bottom: 1px solid $border-color;
+        padding: 15px 0px 15px 0;
+    }
+}
+
+.rescheduling-survey {
+    .radio-type-txt {
+        padding-bottom: 0px;
+        .label-heading {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .schedule-txt-area {
+        background: #eff2f9;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 20px;
+        margin-bottom: 25px;
+        .schedule-date-txt {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 30px;
+                color: $heading-color;
+            }
+            a {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration: underline;
+                cursor: pointer;
+                color: $heading-color;
+            }
+        }
+        p {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba($heading-color, 0.6);
+            margin: 5px 0;
+            display: block;
+        }
+    }
+    .switch-toggle,
+    .switch-active {
+        width: 100%;
+    }
+}
+
+.survey-hisory-popup {
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 5px 0 !important;
+        color: $heading-color;
+    }
+    .date-time {
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        color: rgba($heading-color, 0.6);
+    }
+    table {
+        tbody {
+            tr {
+                td {
+                    &:nth-child(2) {
+                        width: calc(100% - 80px) !important;
+                        border-radius: 8px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.share-popup {
+    .email-attech-doc-list {
+        li {
+            cursor: pointer;
+            &.active {
+                border-color: $accent-color;
+                color: $accent-color;
+            }
+        }
+    }
+    .financer-email-data {
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid $border-color;
+                label {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 40px;
+                    color: $heading-color;
+                }
+                span {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 40px;
+                    color: $heading-color;
+                }
+                &:last-child {
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}

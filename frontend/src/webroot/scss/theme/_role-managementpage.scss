@@ -1,0 +1,370 @@
+.role-managemtn-main {
+  font-family: "Poppins", sans-serif;
+  h1 {
+    font-size: 22px;
+    color: $heading-color;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
+.rolemanagement-outer {
+  background: white;
+  width: 100%;
+  padding: 25px 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+.managment-tabs {
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  .tab-buttons {
+    background: $white;
+    padding: 24px 30px 17px;
+    margin-top: 20px;
+    border-radius: 8px;
+    button {
+      font-size: 16px;
+      margin-right: 40px;
+      border: 0px;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 6px;
+      cursor: pointer;
+      background: transparent;
+      font-weight: normal;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: "Poppins", sans-serif;
+      padding-left: 0px;
+      padding-right: 0px;
+      &.active {
+        border-bottom: 3px solid $accent-color;
+        font-weight: 600;
+        color: rgba($accent-color, 0.87);
+      }
+    }
+  }
+  .tabs {
+    position: relative;
+  }
+  h1,
+  h2 {
+    margin-bottom: 0px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: $heading-color;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.data-table {
+  background: $white;
+  display: block;
+  border-radius: 8px;
+  table {
+    background: $white;
+    border-radius: 8px;
+    padding: 0px 30px;
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+      background: $table-bg;
+      border-radius: 8px;
+      th {
+        padding: 15px 10px;
+        font-size: 12px;
+        color: $heading-color;
+        font-weight: normal;
+        text-align: left;
+        &:first-child {
+          padding-left: 30px;
+          border-radius: 8px 0 0px 8px;
+        }
+        &:last-child {
+          padding-right: 30px;
+          border-radius: 0px 8px 8px 0px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid $border-color;
+        td {
+          padding: 15px 10px;
+          text-align: center;
+          font-size: 12px;
+          color: $text-color;
+          text-align: left;
+          &:first-child {
+            padding-left: 30px;
+          }
+          &:last-child {
+            padding-right: 30px;
+          }
+        }
+        &:hover {
+          background: rgba(239, 242, 249, 0.4);
+          .btn-edit-delete {
+            background: $accent-color;
+            color: $white;
+            border-color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+  .sorting_asc {
+    &:after {
+      content: "\e917";
+      font-family: "dc" !important;
+      display: inline-block;
+      margin-left: 10px;
+      position: relative;
+      top: 3px;
+      font-size: 16px;
+    }
+  }
+}
+
+.btn-role-manage {
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  &.btn-line {
+    line-height: 38px;
+  }
+}
+.search-user-add-btn {
+  .btn-line {
+    line-height: 38px;
+  }
+}
+
+.sidebar-menu {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  background: #333;
+  &.open {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  .menu {
+    > li {
+      > a {
+        padding: 15px 20px;
+        color: #fff;
+      }
+    }
+  }
+}
+.loanbox-revmap-main {
+  .toggleApp {
+    // width: 350px;
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .ToggleSwitch {
+    background-color: rgba(171, 171, 171, 0.2);
+    height: 24px;
+    width: 56px;
+    border-radius: 1em;
+    &.active {
+      background-color: rgba(11, 189, 221, 0.2);
+    }
+  }
+  .ToggleSwitch .knob {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: rgba(171, 171, 171, 1);
+    border-radius: 50%;
+    left: 0em;
+    transition: left 0.3s ease-out;
+    top: 1px;
+    &.active {
+      background: $accent-color;
+      &::after {
+        content: "";
+        background: red;
+      }
+    }
+  }
+  .ToggleSwitch .knob.active {
+    left: 34px;
+  }
+  .toggle-status {
+    margin-left: 66px;
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .knob ~ .toggle-status {
+    color: #e02020;
+  }
+  .knob.active ~ .toggle-status {
+    color: #000;
+  }
+}
+.rolemanagtab {
+  .tab-buttons {
+    padding: 0px 0px 20px;
+  }
+  .tab-list {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  .search-bx {
+    margin-top: 20px;
+  }
+}
+.accor {
+  margin: 10px;
+  transition: 0.4s;
+
+  .head {
+    padding: 10px 0px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .body {
+    padding: 0 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 200ms ease-in-out;
+  }
+  &.active > .body {
+    padding: 10px 0px;
+    max-height: 600px;
+  }
+}
+
+.accordain-arrow {
+  .head {
+    &::before {
+      content: "\e917";
+      font-family: "dc" !important;
+      display: inline-block;
+      margin-left: 10px;
+      position: absolute;
+      top: 3px;
+      right: 13px;
+      font-size: 25px;
+    }
+  }
+
+  .accor {
+    &.active {
+      .head {
+        &::before {
+          content: "\e91a";
+          font-family: "dc" !important;
+          display: inline-block;
+          margin-left: 10px;
+          position: absolute;
+          top: 3px;
+          right: 13px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.conatiner {
+  max-width: $container;
+  margin: 0 auto;
+}
+
+.conatiner-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.status-active {
+  &::before {
+    content: "";
+    background: $accent-color;
+    content: "";
+    background: #0bbddd;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+
+.status-inactive {
+  color: #e02020;
+  &::before {
+    content: "";
+    background: $accent-color;
+    content: "";
+    background: #e02020;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+.data-table {
+  &.rolemanagemnt-table {
+    table {
+      table-layout: fixed;
+    }
+    tr {
+      th,
+      td {
+        padding: 10px 20px;
+        &:nth-child(1) {
+          width: 16%;
+        }
+        &:nth-child(2) {
+          width: 20%;
+        }
+        &:nth-child(3) {
+          width: 13%;
+        }
+        &:nth-child(4) {
+          width: 15%;
+        }
+        &:nth-child(5) {
+          width: 13%;
+        }
+        &:nth-child(6) {
+          width: 11.5%;
+        }
+      }
+      td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.usermanagemnt-sec-tab {
+  .edit-user {
+    width: 630px;
+  }
+}
+
+.mg100{
+  margin-top: 100px;
+}

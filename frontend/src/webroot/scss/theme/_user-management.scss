@@ -1,0 +1,339 @@
+.user-status-tab-chips {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $white;
+  padding: 0px 30px 25px;
+  ul {
+    display: flex;
+    li {
+      border: 1px solid #e3e7f1;
+      background: $white;
+      height: 32px;
+      border-radius: 16px;
+      margin-right: 10px;
+      padding: 0px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $heading-color;
+      font-size: 12px;
+      cursor: pointer;
+      span {
+        background: rgba($table-bg, 0.6);
+        padding: 3px 8px;
+        margin-left: 10px;
+        font-size: 11px;
+        border-radius: 12px;
+      }
+      &.active {
+        background: $accent-color;
+        color: $white;
+        span {
+          background: rgba(0, 151, 178, 0.6);
+          color: $white;
+        }
+      }
+    }
+  }
+  .search-user-add-btn {
+    display: flex;
+    align-items: center;
+    .search-bx {
+      width: 320px;
+      margin-right: 15px;
+      input {
+        padding: 10px 15px 10px 50px;
+      }
+    }
+  }
+}
+
+.user-managtable {
+  table {
+    table-layout: fixed;
+    th,
+    td {
+      &:nth-child(1) {
+        width: 10%;
+        white-space: normal;
+      }
+      &:nth-child(2) {
+        width: 10%;
+      }
+      &:nth-child(3) {
+        width: 16%;
+      }
+      &:nth-child(4) {
+        width: 11%;
+      }
+      &:nth-child(5) {
+        width: 12%;
+      }
+      &:nth-child(6) {
+        width: 10%;
+        white-space: normal;
+      }
+      &:nth-child(7) {
+        width: 11%;
+      }
+      &:nth-child(8) {
+        width: 10%;
+      }
+      &:nth-child(9) {
+        width: 10%;
+      }
+    }
+    td {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 10px;
+    }
+  }
+}
+
+.edit-user-form {
+  .css-1pahdxg-control {
+    min-height: 48px;
+    height: 48px;
+  }
+}
+
+
+.loanbox-revmap-main {
+  .toggleApp {
+    // width: 350px;
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .ToggleSwitch {
+    background-color: rgba(171, 171, 171, 0.2);
+    height: 24px;
+    width: 56px;
+    border-radius: 1em;
+    &.active {
+      background-color: rgba(11, 189, 221, 0.2);
+    }
+  }
+  .ToggleSwitch .knob {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: rgba(171, 171, 171, 1);
+    border-radius: 50%;
+    left: 0em;
+    transition: left 0.3s ease-out;
+    top: 1px;
+    &.active {
+      background: $accent-color;
+      &::after {
+        content: "";
+        background: red;
+      }
+    }
+  }
+  .ToggleSwitch .knob.active {
+    left: 34px;
+  }
+  .toggle-status {
+    margin-left: 66px;
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .knob ~ .toggle-status {
+    color: #e02020;
+  }
+  .knob.active ~ .toggle-status {
+    color: #000;
+  }
+
+.rolemanagtab {
+  .tab-buttons {
+    padding: 0px 0px 20px;
+  }
+}
+.accor {
+  margin: 10px;
+  transition: 0.4s;
+
+  .head {
+    padding: 10px 0px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .body {
+    padding: 0 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 200ms ease-in-out;
+  }
+  &.active > .body {
+    padding: 10px 0px;
+    max-height: 600px;
+  }
+}
+
+.accordain-arrow {
+  .head {
+    &::before {
+      content: "\e917";
+      font-family: "dc" !important;
+      display: inline-block;
+      margin-left: 10px;
+      position: absolute;
+      top: 3px;
+      right: 13px;
+      font-size: 25px;
+    }
+  }
+
+  .accor {
+    &.active {
+      .head {
+        &::before {
+          content: "\e91a";
+          font-family: "dc" !important;
+          display: inline-block;
+          margin-left: 10px;
+          position: absolute;
+          top: 3px;
+          right: 13px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.conatiner {
+  max-width: $container;
+  margin: 0 auto;
+}
+
+.conatiner-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.status-active {
+  &::before {
+    content: "";
+    background: $accent-color;
+    content: "";
+    background: #0bbddd;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+
+.status-inactive {
+  color: #e02020;
+  &::before {
+    content: "";
+    background: $accent-color;
+    content: "";
+    background: #e02020;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+.data-table {
+  &.rolemanagemnt-table {
+    table {
+      table-layout: fixed;
+    }
+    tr {
+      th,
+      td {
+        padding: 10px 20px;
+        &:nth-child(1) {
+          width: 16%;
+        }
+        &:nth-child(2) {
+          width: 20%;
+        }
+        &:nth-child(3) {
+          width: 13%;
+        }
+        &:nth-child(4) {
+          width: 15%;
+        }
+        &:nth-child(5) {
+          width: 13%;
+        }
+        &:nth-child(6) {
+          width: 11.5%;
+        }
+      }
+      td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.usermanagemnt-sec-tab {
+  .edit-user {
+    width: 630px;
+  }
+}
+.edit-user-form{
+fieldset{
+  margin-top: 20px;
+}
+
+.edit-user{ 
+.edit-user-form{
+ .form-filed {
+ .css-1r4vtzz, 
+ .css-yk16xz-control {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.6)!important;
+}
+ }
+}
+}
+}
+.css-1r4vtzz, .css-48ayfv {
+  width: 100%!important;
+  box-shadow: none!important;
+}
+.search-bx i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 21px;
+  color: #000;
+}
+
+
+.add-new-user-form .accordion-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.popup-outer{
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: calc(100% + 70px);
+  margin-left: -35px;
+  padding: 0px 35px;
+  margin-right: -35px;
+}
+}
+

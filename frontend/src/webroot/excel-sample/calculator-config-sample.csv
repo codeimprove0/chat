@@ -1,0 +1,4 @@
+from year,to year,tenure,chattel fee,processing fee,dealer incentive,top up,interest,amount financed (min),amount financed (max),vehicle category
+2017,2023,48,7,,9,0.25,1.45,0,50000000,Car
+2017,2023,36,7,,8,0.25,1.45,0,50000000,Car
+2018,2022,36,7,2.5,9,0.25,1.45,0,50000000,Car

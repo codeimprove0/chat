@@ -1,0 +1,40 @@
+.tippy-popper {
+    .tippy-tooltip {
+        background: $white !important;
+        box-shadow: 0px 2px 14px rgba(31, 45, 78, 0.14);
+        border-radius: 6px;
+        color: $heading-color !important;
+        padding: 20px !important;
+    }
+
+    .controlled-example_close-button {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .converter-tootip {
+        color: rgba($heading-color, 0.6);
+    }
+}
+
+.tippy-popper[x-placement^=bottom] [x-arrow].arrow-small {
+    border-bottom: 5px solid $white !important;
+}
+
+.tippy-popper[x-placement^=top] [x-arrow].arrow-small {
+    border-top: 5px solid $white !important;
+}
+
+.tippy-popper[x-placement^=left] [x-arrow].arrow-small {
+    border-left: 5px solid $white !important;
+}
+
+.tippy-popper[x-placement^=right] [x-arrow].arrow-small {
+    border-right: 5px solid $white !important;
+}
+
+
+

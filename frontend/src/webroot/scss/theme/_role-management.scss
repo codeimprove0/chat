@@ -1,0 +1,23 @@
+//common css to be added in almost all pages
+@import "variables";
+@import "mixins";
+@import "brandcolor";
+// @import "reset.scss";
+@import "spacing";
+// @import "helpers";
+// @import "icons";
+// @import "typography";
+@import "button";
+@import "role-managementpage";
+@import "edit-role";
+@import "material-input";
+@import "on-off-toggle";
+@import "form-assets";
+@import "user-management";
+@import "pagination-role-management";
+@import "edit-user";
+@import "add-role-popup";
+@import "add-new-user-popup";
+// @import "loan-box-ribben";
+@import "hierarchy-details";
+@import "../icons";

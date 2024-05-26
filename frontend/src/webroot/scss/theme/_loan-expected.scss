@@ -1,0 +1,207 @@
+.laon-expect-outer {
+    margin-top: 20px;
+    display: flex;
+    // margin-bottom: 20px;
+
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .col-md-6,
+    .col-md-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .loan-expect-left-panle {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        background: $white;
+        width: calc(60% - 10px);
+        padding: 20px 30px;
+        margin-right: 10px;
+    }
+    .loan-expect-right-panel {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        background: $white;
+        width: calc(40% - 10px);
+        padding: 20px 30px;
+        margin-left: 10px;
+    }
+    .heading-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: $heading-color;
+        }
+        .action-icn {
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    list-style: none;
+                    padding-left: 15px;
+                    color: $heading-color;
+                    font-size: 18px;
+                    cursor: pointer;
+                    a {
+                        color: $heading-color;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .loan-filed-sec {
+        background: #ffffff;
+        border: 1px solid #bbbbbb;
+        border-radius: 8px;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        .heading-dp-txt {
+            padding-bottom: 20px;
+            span {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 30px;
+                color: $heading-color;
+            }
+            &.d-flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .custom-control-label {
+                    padding-left: 17px;
+                }
+            }
+            .custom-control {
+                margin-top: 6px;
+            }
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            padding-bottom: 16px;
+            color: $heading-color;
+        }
+        &.m-t-20 {
+            margin-top: 20px;
+        }
+        .btn-submit {
+            &.btn-primary {
+                min-width: 95px;
+                height: 48px;
+                line-height: 47px;
+            }
+        }
+    }
+    .form-group-bx {
+        fieldset {
+            margin-bottom: 20px;
+        }
+        textarea {
+            resize: none;
+        }
+    }
+    .material {
+        input {
+            &.form-input {
+                height: 48px;
+                &:read-only {
+                    background: #f8f8f8;
+                }
+            }
+        }
+        .form-label {
+            &:before {
+                top: 15px;
+            }
+        }
+        textarea {
+            &:read-only {
+                background: #f8f8f8;
+            }
+        }
+    }
+    h2 {
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        color: $heading-color;
+    }
+    .react-datepicker__year .react-datepicker__year-text {
+        padding: 5px 0;
+    }
+    .single-select {
+        .css-1pahdxg-control,
+        .css-yk16xz-control {
+            height: 48px;
+        }
+        .css-26l3qy-menu {
+            margin-top: 0px !important;
+        }
+    }
+    .btn-disable {
+        background: #919191;
+        border-color: #919191;
+        box-shadow: none;
+    }
+    .loan-form-filed-scroll {
+        max-height: 1160px;
+        overflow-y: auto;
+        width: calc(100% + 50px);
+        margin-left: -30px;
+        padding: 0px 15px 0px 30px;
+    }
+    .required-dp-txt {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: $heading-color;
+        padding-bottom: 16px;
+    }
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.material {
+    input {
+        &.form-input {
+            height: 48px;
+            &:read-only {
+                background: #f8f8f8;
+            }
+        }
+    }
+    .form-label {
+        &:before {
+            top: 15px;
+        }
+    }
+    textarea {
+        &:read-only {
+            background: #f8f8f8;
+        }
+    }
+}
+
+.lead-form-filed {
+    .single-select {
+        .css-1pahdxg-control,
+        .css-yk16xz-control {
+            height: 48px;
+        }
+        .css-26l3qy-menu {
+            margin-top: 0px !important;
+        }
+    }
+}

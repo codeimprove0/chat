@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/************************all time required css start**************************/
+html {
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  color: $text-color;
+  font-size: 14px;
+  // line-height: 1.5;
+  background: #eff2f9;
+}
+
+p {
+  margin: 0px 0px 0px 0px;
+  line-height: 1.5;
+}
+
+a {
+  color: $accent-color;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  touch-callout: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  -webkit-text-size-adjust: none;
+  -webkit-highlight: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+a,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul,
+span {
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  outline: none;
+}
+
+i {
+  font-style: normal;
+}
+
+.button,
+.button-cta,
+.card-link,
+.card-link2,
+body,
+button,
+input,
+select,
+textarea,
+a {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea {
+  -webkit-user-select: auto !important;
+  -khtml-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+// input,
+// select {
+//   appearance: none;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+// }
+
+select::-ms-expand {
+  display: none;
+}
+
+select:-moz-focusring {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  word-break: break-word;
+}
+
+fieldset {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/************************all time required css end**************************/
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: rgba($text-color, 0.1);
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($text-color, 0.2);
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0px;
+  }
+}
+.d-flex {
+  display: flex;
+}
+
+.add-split-link {
+  color: #0BBDDD;
+}
+
+.power-bi-report-class{
+  padding-top: 75px;
+  height: 800px !important;
+}

@@ -1,0 +1,186 @@
+.whatsappheader{
+    border-bottom: 1px solid gray ;
+    padding: 40px 0px 10px 0px;
+    background: #fff;
+    z-index: 2;
+    position: fixed;
+    top: 80px;
+    max-height: calc(100% - 80px);
+    width: 100%;
+    max-width: 520px;
+}
+.whatsappname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: #F3AD59FF;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.selfchat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: #000;
+    border-radius: 50%;
+    margin-left: 5px; 
+    align-self: flex-end;
+}
+.otherchat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: #02240c;
+    border-radius: 50%;
+    margin-right: 5px; 
+    align-self: flex-end;  
+}
+.mychat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: #f3ad59;
+    border-radius: 50%;
+    margin-right: 5px; 
+    align-self: flex-end;  
+}
+.detailsname{
+    color: #000;
+    font-size: 14px;
+}
+.whatsappdetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.templatesbtn{
+    height: 38px;
+    padding: 10px 20px;
+    border: 1px solid #6147FEFF ;
+    color:  #6147FEFF;
+    border-radius: 30px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.chatsdate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin: 70px 0px 10px 0px;
+}
+.chatsviewright {
+    padding: 8px 16px;
+    background:  #F3F4F6FF;
+    border-radius: 4px;
+    font-size: 13px;
+    max-width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+}
+.chattime{
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+    font-size: 11px;
+}
+.leftchats{
+    margin-bottom: 40px;
+}
+.rightchats{
+    margin-bottom: 40px;
+}
+.chatsviewleft {
+    padding: 8px 16px;
+    background:  #E7E3F0FF;
+    font-size: 13px;
+    border-radius: 4px;
+    max-width: 80%;
+    margin-right: auto;
+}
+.chatsviewright {
+    padding: 8px 16px;
+    background:  #E7E3F0FF;
+    font-size: 13px;
+    border-radius: 4px;
+    max-width: 80%;
+    margin-left: auto;
+}
+.chatmsgdetails{
+    display: flex;
+    margin-bottom: 10px;
+}
+.sendchatsdetails{
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+    width: 100%;
+    max-width: 520px;
+}
+.inputbox{
+    display: flex;
+    align-items: center;
+}
+.attachiconwidth{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sendinput {
+    display: flex;
+    align-items: center;
+    background: #F3F4F5FF;
+    border-radius: 4px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.sendinput textarea {
+    border: none;
+    background: #F3F4F5FF;
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    max-height: 40px;
+    resize: none;
+}
+.sendinput span{
+    margin-left: 10px;
+}
+.sendinput img{
+   cursor: pointer;
+}
+.ic-attach_file {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    input{
+        display: none;
+    }
+}
+.sendstatus{
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

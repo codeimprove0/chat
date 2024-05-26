@@ -1,0 +1,13 @@
+.hierarchy-details-modal{
+    font-size: medium;
+    padding: 5px;
+    .user-detail-title {
+        padding-bottom: 10px;
+    }
+    .detail {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+}

@@ -1,0 +1,235 @@
+.edit-user {
+  width: 540px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: $white;
+  border-radius: 25px 0 25px 0;
+  height: 100%;
+  padding: 40px;
+  overflow-y: auto;
+  .edit-user-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .form-filed {
+      width: calc(50% - 15px);
+      padding: 0px;
+      border-top: 0px;
+      .css-yk16xz-control,
+      .css-1r4vtzz {
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.6) !important;
+      }
+    }
+  }
+
+  .on-off-toggle {
+    margin-bottom: 20px;
+  }
+  .custom-control-label {
+    font-size: 13px;
+  }
+}
+.feature-assign {
+  margin-top: 16px;
+  .accordion-header {
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    &::before {
+      content: "";
+      background: #000;
+      /* border-bottom: 1px solid #000; */
+      height: 1px;
+      width: 175px;
+      position: absolute;
+      bottom: 6px;
+      left: 0px;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // padding-top: 10px;
+    li {
+      width: calc(50% - 20px);
+      line-height: 32px;
+      font-size: 12px;
+      color: rgba($heading-color, 0.7);
+      &::before {
+        content: "\e927";
+        font-family: dc !important;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.assign-more-feature-sec {
+  display: block;
+  margin-top: 20px;
+  padding: 18px 25px;
+  background: #eff2f9;
+  border-radius: 6px;
+  span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: $heading-color;
+    position: relative;
+    &::after {
+      content: "\e928";
+      font-family: icomoon !important;
+      transform: rotate(85deg);
+      position: absolute;
+      right: 23px;
+    }
+  }
+  .assign-more-search-list {
+    margin-top: 15px;
+  }
+  .user-list {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .accordion-item {
+    margin-bottom: 0px;
+    .accordion-header {
+      padding: 0px;
+      position: relative;
+      button {
+        &::after {
+          content: "\e917";
+          font-family: dc !important;
+          position: absolute;
+          font-size: 27px;
+          top: -6px;
+          right: -6px;
+        }
+      }
+
+      &.active {
+        button {
+          &::after {
+            content: "\e91a";
+            font-family: dc !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .select-list {
+//   &::after {
+//     content: "\e917";
+//     font-family: "dc" !important;
+//     display: inline-block;
+//     margin-left: 10px;
+//     position: absolute;
+//     top: 18px;
+//     right: 13px;
+//     font-size: 10px;
+//   }
+// }
+.suggestion-box {
+  max-height: 242px;
+  overflow-y: auto;
+  background: $white;
+  border: 1px solid rgba(40, 51, 63, 0.2);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 100%;
+  z-index: 1;
+  margin-top: -9px;
+  li {
+    padding: 10px 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 48px;
+    line-height: 26px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-top: 1px solid rgba(40, 51, 63, 0.2);
+    text-align: left;
+    font-size: 13px;
+  }
+}
+
+#app {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  // border-radius: 4px;
+  // background-color: white;
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.accordion-header {
+  margin: 0;
+  padding: 16px 0;
+  line-height: normal;
+}
+
+.accordion-header button {
+  width: 100%;
+  padding: 0 0 10px 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-panel {
+  display: none;
+}
+
+.accordion-panel.expanded {
+  display: block;
+  padding: 0px 0;
+  // border-top: 1px solid #eee;
+}
+.feature-assign {
+  .accordion-header {
+    button {
+      &::after {
+        content: "\e917";
+        font-family: dc !important;
+        margin-right: 10px;
+        position: absolute;
+        font-size: 27px;
+        bottom: 8px;
+      }
+    }
+
+    &.active {
+      button {
+        &::after {
+          content: "\e91a";
+          font-family: dc !important;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

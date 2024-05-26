@@ -1,0 +1,78 @@
+.add-new-user-popup {
+  // width: 520px;
+  // background: $white;
+  // padding: 40px;
+  // border-radius: 15px;
+  // max-height: 500px;
+  // overflow-y: auto;
+  h2 {
+    margin-bottom: 0px;
+  }
+  .accordion-item {
+    margin: 0px;
+  }
+  .accordion-header {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    position: relative;
+    button {
+      &::after {
+        content: "\e907";
+        font-family: dc !important;
+        position: absolute;
+        font-size: 27px;
+        top: 0px;
+        right: -6px;
+      }
+    }
+    &.active {
+      button {
+        &::after {
+          content: "\e90c";
+          font-family: dc !important;
+        }
+      }
+    }
+  }
+}
+.add-new-user-form {
+  .accordion-item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba($heading-color, 0.1);
+    .accordion-collapse {
+      padding-top: 20px;
+    }
+  }
+
+  .accordion {
+    .accordion-item {
+      &:nth-last-child(2) {
+        border-bottom: 0px;
+      }
+    }
+  }
+
+  .city-field {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .form-filed {
+      width: calc(50% - 10px);
+    }
+  }
+
+  fieldset {
+    padding: 0px;
+    border: 0px;
+  }
+  .css-yk16xz-control,
+  .css-1r4vtzz {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
+  }
+}

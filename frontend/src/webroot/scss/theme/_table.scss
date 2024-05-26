@@ -1,0 +1,228 @@
+table {
+    table-layout: fixed;
+    background: $white;
+    border-radius: 6px;
+    word-break: break-word;
+    thead {
+        tr {
+            background: #eff2f9;
+            border-radius: 6px;
+            th {
+                padding: 15px 9px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: $heading-color;
+                // white-space: nowrap;
+                text-align: left;
+                &:first-child {
+                    // border-radius: 6px 0 0 6px;
+                    padding-left: 30px;
+                }
+                &:last-child {
+                    // border-radius: 0px 6px 6px 0;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid rgba($heading-color, 0.06);
+            td {
+                padding: 13px 9px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: rgba($heading-color, 0.6);
+                text-align: left;
+                // overflow: hidden;
+                // white-space: nowrap;
+                // text-overflow: ellipsis;
+                &:first-child {
+                    // padding-top: 19px;
+                    padding-left: 30px;
+                }
+                &:last-child {
+                    //   border-bottom: 0px;
+
+                    padding-right: 20px;
+                }
+            }
+
+            &:hover {
+                background: rgba(239, 242, 249, 0.4);
+                .btn-line {
+                    background: $accent-color;
+                    color: $white;
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lead-list-data-table {
+    background: $white;
+    border-radius: 6px;
+    tbody {
+        tr {
+            td {
+                // vertical-align: top;
+                height: 70px;
+                padding: 10px 9px;
+                max-height: 80px;
+                a {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+                .table-txt-data {
+                    h5 {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $heading-color;
+                        
+                    }
+                    span {
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 22px;
+                        color: rgba($heading-color, 0.6);
+                        display: block;
+                    }
+                    ul {
+                        display: flex;
+                        li {
+                            padding: 0px 8px;
+                            position: relative;
+                            &:after {
+                                content: "";
+                                height: 2px;
+                                width: 2px;
+                                border-radius: 100%;
+                                background: rgba($heading-color, 0.6);
+                                position: absolute;
+                                right: -1px;
+                                top: 10px;
+                            }
+                            &:first-child {
+                                padding-left: 0px;
+                            }
+                            &:last-child {
+                                padding-right: 0px;
+                                &:after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(8) {
+                    overflow: inherit;
+                }
+                .action-btn {
+                    display: flex;
+                    li {
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 4px;
+                        border: 1px solid #e0e0e0;
+                        margin-right: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 16px;
+                        cursor: pointer;
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                td {
+                    a {
+                        color: $accent-color;
+                    }
+                    .action-btn {
+                        display: flex;
+                        li {
+                            background: $accent-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    table {
+        th,
+        td {
+            &:nth-child(1) {
+                width: 5%;
+            }
+            &:nth-child(2) {
+                width: 11%;
+            }
+            &:nth-child(3) {
+                width: 12%;
+            }
+            &:nth-child(4) {
+                width: 12%;
+            }
+            &:nth-child(5) {
+                width: 12%;
+            }
+            &:nth-child(6) {
+                width: 10%;
+            }
+            &:nth-child(7) {
+                width: 10%;
+            }
+            &:nth-child(8) {
+                width: 12%;
+            }
+            &:nth-child(9) {
+                width: 12%;
+            }
+        }
+    }
+
+    .single-select {
+        .css-1pahdxg-control,
+        .css-yk16xz-control {
+            width: 130px;
+            height: 32px;
+            min-height: 32px;
+        }
+        .css-g1d714-ValueContainer {
+            height: 30px;
+            border-radius: 8px;
+        }
+        .css-1uccc91-singleValue,
+        .single-select .css-1v99tuv {
+            color: rgba($heading-color, 0.6);
+        }
+        .css-1hb7zxy-IndicatorsContainer {
+            &:after {
+                color: rgba($heading-color, 0.6);
+            }
+        }
+    }
+}
+
+.assign-name {
+    display: flex;
+    align-items: center;
+    span {
+        width: calc(100% - 34px);
+        margin-right: 5px;
+    }
+    i {
+        font-size: 18px;
+    }
+}
